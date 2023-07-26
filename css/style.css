@@ -219,10 +219,44 @@ nav a:hover::after {
     
 }
 
-@media(min-width: 716px) {
-        .article-section{
-        grid-template: 1fr 1fr /1fr 1fr 1fr;
+@media(min-width: 415px ){
+    body {
+        background-color: rgba(0, 0, 0, 3%);
+        
+        }
+     .header {
+         background-color: #ECECEC;
+     }
+     
+    .hero-section {
+        padding: 3em 2em 1em 2em;
+    }
+    .main-article-section {
+        padding: 0 2em;
+    }
+        
+    .widescreen-articles-section{
+        display: grid;
+        grid-template: 1fr/ 1fr 1fr 1fr;
         grid-column-gap: 1rem;
     }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    time {
+        font-size: 1rem;
+    }
+    
 }
+
+@media(min-width: 716px) {
+    .hero-section {
+        padding: 5em 6em 2em 6em;
+    }
+    .main-article-section {
+        padding: 1em 6em;
+}
+}   
 /* end css */

@@ -21,8 +21,9 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 1em 1em 0 1em;
+    padding: 1em;
     margin-bottom: 1em;
+    background-color: #FFFFFF;
 }
 
 .logo-cont {
@@ -61,7 +62,8 @@ header {
     margin-left: 1em;
 }
 
-.hero-section {
+.hero-section,
+.main-article-section {
     padding: 0 1em;
 }
 
@@ -69,12 +71,13 @@ header {
     width: 100%;
 }
 
-.article-section {
+.blog-article-section {
     width: 100%;
     display: grid;
     padding: 1.5em 1em 0 1em;
-    
 }
+
+
 
 .article-img {
     width: 100%;
@@ -146,6 +149,21 @@ nav a:hover::after {
 /* media queries */
 
 @media(min-width: 415px ){
+    body {
+        background-color: rgba(0, 0, 0, 3%);
+        
+        }
+     .header {
+         background-color: #FFFFFF;
+     }
+     
+    .hero-section {
+        padding: 3em 2em 1em 2em;
+    }
+    .main-article-section {
+        padding: 0 2em;
+    }
+        
     .widescreen-articles-section{
         display: grid;
         grid-template: 1fr/ 1fr 1fr 1fr;
@@ -159,5 +177,15 @@ nav a:hover::after {
     time {
         font-size: 1rem;
     }
+    
 }
+
+@media(min-width: 716px) {
+    .hero-section {
+        padding: 5em 6em 2em 6em;
+    }
+    .main-article-section {
+        padding: 1em 6em;
+}
+}   
 /* end css */

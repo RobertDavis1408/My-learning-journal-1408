@@ -21,8 +21,9 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 1em 1em 0 1em;
+    padding: 1em;
     margin-bottom: 1em;
+    background-color: #FFFFFF;
 }
 
 .logo-cont {
@@ -63,6 +64,10 @@ header {
 
 .hero-section {
     padding: 2.5em 1em 0 1em;
+}
+
+.main-article-section {
+    padding: 1.5em 1em 0 1em;
 }
 
 .article-section {
@@ -142,6 +147,21 @@ nav a:hover::after {
 /* media queries */
 
 @media(min-width: 415px ){
+    body {
+        background-color: rgba(0, 0, 0, 3%);
+        
+        }
+     .header {
+         background-color: #ECECEC;
+     }
+     
+    .hero-section {
+        padding: 3em 2em 1em 2em;
+    }
+    .main-article-section {
+        padding: 0 2em;
+    }
+        
     .widescreen-articles-section{
         display: grid;
         grid-template: 1fr/ 1fr 1fr 1fr;
@@ -155,6 +175,34 @@ nav a:hover::after {
     time {
         font-size: 1rem;
     }
+    
 }
+
+@media(min-width: 716px) {
+    .hero-section {
+        display: grid;
+        padding: 5em 6em 2em 6em;
+        grid-template: 1fr/1fr 4fr;
+        
+    }
+    
+    
+    
+    .intro-text {
+        align-self: end;
+        margin-left: 1em
+    }
+    
+  section h1 {
+        display: none;
+    }
+    
+    
+    .main-article-section {
+        padding: 1em 6em;
+}
+}   
+/* end css */
+
 
 
